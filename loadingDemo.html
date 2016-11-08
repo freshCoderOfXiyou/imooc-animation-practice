@@ -3,107 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>loading demo</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
-  <style >
-    body{
-    	background: #000;
-    	color: #fff;
-    }
-	    #main{
-			margin: 0 auto;
-			width: 11em;
-
-	    }
-	    	#linear-loading{
-		  		width: 10em;
-		  		height: 10em;
-		  		background: #ffe;
-		  	}
-
-		  		.animation-sub{
-		  			width: 0.8em;
-		  			height: 9em;
-		  			/* display: inline-block; */
-		  			background: green;
-		  			margin: 0.5em 0.22em;
-		  			float: left;
-		  			border-radius: 20%;
-		  			animation: linearkf 2s infinite alternate;
-		  		}
-				
-				.linear1{
-					animation-delay: -2s;
-				}
-				.linear2{
-					animation-delay: -1.75s;
-				}
-				.linear3{
-					animation-delay: -1.5s;
-				}
-				.linear4{
-					animation-delay: -1.25s;
-				}
-				.linear5{
-					animation-delay: -1s;
-				}
-				.linear6{
-					animation-delay: -0.75s;
-				}
-				.linear7{
-					animation-delay: -0.5s;
-				}
-				.linear8{
-					animation-delay: -0.25s;
-				}
-
-		  		@keyframes linearkf{
-		  			form{
-		  				transform:scaleY(1);
-		  			}
-		  			to{
-		  				transform:scaleY(0.05);
-		  			}
-		  		}
-
-		  	#circle-loading{
-		  		width: 100px;
-		  		height: 100px;
-		  	    /* background: #eee; */
-		  	    border-radius: 50%;
-		        border: solid 1em #333;
-		        border-left: solid 1em #fff;
-		        animation:load 2s infinite linear; 
-		  	}
-		  	
-			  	@keyframes load{
-			  		form{
-			  			transform: rotate(0deg);
-			  		}
-			  		to{
-			  			transform: rotate(360deg);
-			  		}
-			  	}
-
-	  	
-  </style>
+ 
 <body>
     <h2>loading demos,one is linear shape and the other is the circle shape.</h2>
     <span><strong>tips:</strong>this is not original,it is learn from <address>www.imooc.com</address></span>
     <div id='main'>
-	    <h2>Frist demo</h2>
-		<div id='linear-loading'>
-			<div class="linear1 animation-sub"></div>
-			<div class="linear2 animation-sub"></div>
-			<div class="linear3 animation-sub"></div>
-			<div class="linear4 animation-sub"></div>
-			<div class="linear5 animation-sub"></div>
-			<div class="linear6 animation-sub"></div>
-			<div class="linear7 animation-sub"></div>
-			<div class="linear8 animation-sub"></div>
+        <div class="demos">
+		    <h2>Frist demo</h2>
+			<div id='linear-loading'>
+				<div class="linear1 animation-sub"></div>
+				<div class="linear2 animation-sub"></div>
+				<div class="linear3 animation-sub"></div>
+				<div class="linear4 animation-sub"></div>
+				<div class="linear5 animation-sub"></div>
+				<div class="linear6 animation-sub"></div>
+				<div class="linear7 animation-sub"></div>
+				<div class="linear8 animation-sub"></div>
+			</div>
 		</div>
-		<h2>Second demo</h2>
-		<div id="circle-loading">
+		<div class="demos">
+			<h2>Second demo</h2>
+			<div id="circle-loading"></div>
+		</div>
+		<div class="demos">
+			<h2>crazy shake</h2>
+			<div class="shake">let's shake our body</div>
+		</div>
+		<div class="demos largedemos">
+			<h2 >photo album of brook</h2>
+			<div class='photo-wrap wrap1'>
+			    <img src="westbrook3.jpg" alt="westbrook"  class='photo'>
+			    <span>step by step  !</span>
+			</div>
+			<div class='photo-wrap wrap2'>
+			    <img src="westbrook1.jpg" alt="westbrook"  class='photo'>
+			    <span>do better,be hero !</span>
+			</div>
+			<div class='photo-wrap wrap3' >
+			    <img src="westbrook2.jpg" alt="westbrook"  class='photo'>
+			    <span>never give it up !</span>
+			</div>
+		</div>
+		<div class="demos">
+			<h2>imitate flip,let's read</h2>
+			<div class='flip-div' id='photo-clip'>
+			    <img src="westbrook3.jpg" alt="westbrook"  class='photo'  >
+			    <span>step by step  !</span>
+			</div>
 		</div>
 	</div>
 </body>
+<script src='animate.js'></script>
 </html>
