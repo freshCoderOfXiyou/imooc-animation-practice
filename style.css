@@ -245,4 +245,49 @@
 			border-bottom-width: 174px;
 
 		}
-			
+	
+	.wrap4{
+		overflow: hidden;
+		height: 205px;
+		position: relative;
+	}		
+		.shortP{
+			width: 250px;
+			background: #fff;
+			height: 150px;
+			line-height: 1.2em;
+			color: #000;
+			text-indent: 2em;
+			position: absolute;
+			bottom:-100px;
+			transition: bottom 1s ease-out;
+			cursor: pointer;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+			.boldFont{
+				font-size: 1.1em;
+				font-weight: bold;
+			}
+	.wrap4:hover .shortP{
+		position: absolute;
+		bottom: -20px;
+
+	}
+		.flForm{
+			float: right;
+			background: #fff;
+		}
+			.flForm input:first-child{
+				line-height: 2em;
+				width: 100px;
+				transition: width 1s ease-out;
+			}
+			.flForm input:nth-child(2){
+				line-height: 2em;
+			}
+			.demos .flForm .longer{
+				width: 170px;
+			}
